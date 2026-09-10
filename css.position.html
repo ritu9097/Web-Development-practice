@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            border: 2px solid #1edb5a;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(144, 30, 30);
+        }
+
+        #box-1 {
+            position: static;
+            background-color: lightcoral;
+        }
+
+        #box-2 {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: blue;
+        }
+
+        #box-3 {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background-color: green;
+        }
+
+        #box-4 {
+            position: fixed;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div id="box-1" class="box">I am static</div>
+        <div id="box-2" class="box">I am relative</div>
+        <div id="box-3" class="box">I am absolute</div>
+        <div id="box-4" class="box">I am fixed</div>
+        <div class="box">I am a sibling</div>
+        <div class="box">I am a sibling</div>
+        <div class="box">I am a sibling</div>
+        <div class="box">I am a sibling</div>
+    </div>
+</body>
+</html>
